@@ -172,6 +172,7 @@ public class RequestInterceptor {
             JsonKey.USER_ID,
             StringUtils.isNotBlank(clientAccessTokenId) ? clientAccessTokenId : JsonKey.ANONYMOUS);
       } else {
+        System.out.println("here private ANONYMOUS: ");
         userAuthentication.put(JsonKey.USER_ID, JsonKey.ANONYMOUS);
       }
     }
